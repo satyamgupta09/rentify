@@ -44,7 +44,7 @@ export default function SignIn() {
     event.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:5000/api/login", {
+      const response = await axios.post("https://rentify-3-3qv3.onrender.com/api/login", {
         email: email,
         password: password,
       });
