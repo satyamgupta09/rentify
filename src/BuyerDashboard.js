@@ -51,7 +51,7 @@ const BuyerDashboard = () => {
       const token = localStorage.getItem("token");
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/login/properties"
+          "https://rentify-3-3qv3.onrender.com/api/login/properties"
         );
         console.log(response.data);
         setProperties(response.data);
@@ -123,7 +123,7 @@ const BuyerDashboard = () => {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.post(
-        "http://localhost:5000/api/login/sendEmail",
+        "https://rentify-3-3qv3.onrender.com/api/login/sendEmail",
         {
           sname: name,
           smobile: mobile,
