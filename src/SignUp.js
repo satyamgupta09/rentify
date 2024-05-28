@@ -48,7 +48,7 @@ export default function SignUp() {
     console.log(user);
 
     try {
-      const response = await axios.post("http://localhost:5000/api/register", {
+      const response = await axios.post("https://rentify-3-3qv3.onrender.com/api/register", {
         firstName: Fname,
         lastName: Lname,
         phoneNumber: mobile,
