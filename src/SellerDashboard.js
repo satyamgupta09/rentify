@@ -92,7 +92,7 @@ export default function SellerDashboard() {
       const token = localStorage.getItem("token");
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/login/allProperty",
+          "https://rentify-3-3qv3.onrender.com/api/login/allProperty",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -135,7 +135,7 @@ export default function SellerDashboard() {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.put(
-        `http://localhost:5000/api/login/editProperty/${propertyId}`,
+        `https://rentify-3-3qv3.onrender.com/api/login/editProperty/${propertyId}`,
         {
           name: Pname,
           area: PArea,
@@ -166,7 +166,7 @@ export default function SellerDashboard() {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.delete(
-        `http://localhost:5000/api/login/deleteProperty/${propertyId}`,
+        `https://rentify-3-3qv3.onrender.com/api/login/deleteProperty/${propertyId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
